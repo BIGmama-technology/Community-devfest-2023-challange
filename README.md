@@ -20,13 +20,15 @@ The platform is designed with a focus on:
 ## Key Guidelines
 - **No OpenAI API**: To encourage innovation, usage of the OpenAI API will result in disqualification. Participants must utilize open-source LLMs.
 - **Remote Machine Access**: Participants will have access to a remote server (details provided) to deploy LLMs.
-- **Prototype Development**: Building a working prototype will be rewarded with bonus points. Conversely, submissions limited to design mockups (e.g., Figma) will incur a penalty.
+- **Prototype Development**: Building a working prototype will be rewarded with bonus points. Conversely, submissions limited to design mockups (e.g. Figma) will incur a penalty bhoooo.
 - **Starter Kit**: A foundational project is provided to kickstart development.
 
 ## Setup Instructions
 
-- **🚨🚨 Next.js 14 requires node version 18.17 and up so make sure to install it or update your current version. 🚨🚨**
-- **🚨🚨 Also this project uses [`pnpm`](https://pnpm.io/) as its package manager so make sure to [install](https://pnpm.io/installation) it.🚨🚨**
+**🚨 Next.js 14 requires node version 18.17 and up so make sure to install it or update your current version. 🚨**
+
+
+**🚨 Also this project uses [`pnpm`](https://pnpm.io/) as its package manager so make sure to [install](https://pnpm.io/installation) it. 🚨**
 
 First, run the development server:
 
