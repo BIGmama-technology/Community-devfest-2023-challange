@@ -1,14 +1,14 @@
-# Tobib.ai : Empowering Access to Medical Pre-Diagnosis
+# Tobib.ai : Enabling Access to Remote Medical Diagnosis
 
 ## Overview
 Tobib.ai aims to bridge the healthcare gap for marginalized communities in Africa and globally by providing an AI-driven platform for pre-diagnostic support. With Tobib we aim to offer an affordable solution for individuals to consult a chatbot about their health concerns. 
 
 The chatbot utilizes a comprehensive knowledge structure, either a knowledge graph or a decision tree, to intelligently query users about their symptoms. 
 
-**The goal is not to diagnose** but to guide users in collecting pertinent medical records, such as CT scans, X-rays, or blood tests, and answering key questions. This pre-prepared file will then assist remote doctors on tobib.ai in making a diagnosis. 
+**The goal is not to diagnose** but to guide users in collecting pertinent medical records, such as CT scans, X-rays, or blood tests, and answering key questions. This prepared file will then assist **real** remote doctors on tobib.ai in making a diagnosis. 
 
 ## Ethical Consideration
-We recognize concerns regarding the potential for misinformation by current Large Language Models (LLMs). However, in regions where medical assistance is scarce, introducing even a small sucess probability. The chatbot serves as a preparatory tool, not a diagnostician; it is the medical professionals who will offer the final judgment based on the compiled data.
+We recognize concerns regarding the potential for misinformation by current Large Language Models (LLMs). However, in regions where medical assistance is scarce, introducing even a small sucess probability is a great thing. The chatbot serves as a preparatory tool, not a diagnostician; it is real medical professionals who will offer the final judgment based on the compiled data.
 
 ## Core Features
 The platform is designed with a focus on:
@@ -28,7 +28,7 @@ The platform is designed with a focus on:
 **🚨 Next.js 14 requires node version 18.17 and up so make sure to install it or update your current version. 🚨**
 
 
-**🚨 Also this project uses [`pnpm`](https://pnpm.io/) as its package manager so make sure to [install](https://pnpm.io/installation) it. 🚨**
+**🚨 This project uses [`pnpm`](https://pnpm.io/) as its package manager so make sure to [install](https://pnpm.io/installation) it. 🚨**
 
 First, run the development server:
 
