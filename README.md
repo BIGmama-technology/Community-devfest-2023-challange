@@ -20,7 +20,7 @@ The platform is designed with a focus on:
 ## Key Guidelines
 - **No OpenAI API**: To encourage innovation, usage of the OpenAI API will result in disqualification. Participants must utilize open-source LLMs.
 - **Remote Machine Access**: Participants will have access to a remote server (details provided) to deploy LLMs.
-- **Prototype Development**: Building a working prototype will be rewarded with bonus points. Conversely, submissions limited to design mockups (e.g. Figma) will incur a penalty bhoooo.
+- **Prototype Development**: Building a working prototype will be rewarded with bonus points.
 - **Starter Kit**: A foundational project is provided to kickstart development.
 
 ## Setup Instructions
