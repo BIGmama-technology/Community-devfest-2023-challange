@@ -11,16 +11,17 @@ class Falcon:
             "text-generation",
             model=self.model_name,
             device_map=device,
+            trust_remote_code=True
         )
 
-    def generate(self, prompt: str) -> str:
+    def generate(self, prompt: str, max_length: int =50 ) -> str:
         sequences = self.pipeline(
             prompt,
             do_sample=True,
             top_k=10,
             num_return_sequences=1,
             eos_token_id=self.tokenizer.eos_token_id,
-            max_length=200,
+            max_length=max_length,
         )
         return sequences[0]["generated_text"]
 
