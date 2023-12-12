@@ -32,6 +32,12 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
+## Run
+
+```bash
+uvicorn api.main:app --reload
+```
+
 ## build the API
 
 build with docker

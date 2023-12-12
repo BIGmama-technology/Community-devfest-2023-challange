@@ -1,20 +1,18 @@
 # Use the official Python image as a parent image
-FROM python:3.9
-
-# Create a directory for your application
-RUN mkdir /app
+FROM python:3.10
 
 # Set the working directory to /app
 WORKDIR /app
 
 # Copy the requirements file into the container
-COPY requirements.txt /app/
+COPY requirements.txt .
 
 # Install the required packages
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Copy the current directory contents into the container at /app
-COPY . /app/
+COPY . .
+RUN pip install .
 
 # Expose the port that the application will run on
 EXPOSE 8000
