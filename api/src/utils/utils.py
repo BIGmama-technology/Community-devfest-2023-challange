@@ -1,6 +1,6 @@
 import re
 
-def process_pormpt(prompt: str) -> str:
+def process_prompt_utils(prompt: str) -> str:
     # define regex pattern to remove all text between square brackets and parentheses
     pattern = r'\[[^\]]*\]|\("[^"]*"\)'
     cleaned_prompt = re.sub(pattern, '', prompt)
