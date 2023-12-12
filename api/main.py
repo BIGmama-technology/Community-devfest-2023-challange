@@ -1,5 +1,5 @@
-from src.model import Llama
-from src.utils.utils import process_prompt
+from src.model import Falcon
+from src.utils.utils import process_prompt_utils
 
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -19,18 +19,18 @@ class OutputResponse(BaseModel):
     generated_text: str
 
 
-llama = Llama()
+falcon = Falcon()
 
 
 @app.post("/generate/", response_model=OutputResponse)
-async def generate_text(prompt: InputPrompt):
-    generated_text = llama.generate(prompt.prompt)
+def generate_text(prompt: InputPrompt):
+    generated_text = falcon.generate(prompt.prompt)
     return {"generated_text": generated_text}
 
 
 @app.post("/process_prompt", response_model=OutputResponse)
-async def process_prompt(prompt: InputPrompt):
-    processed_prompt = process_prompt(prompt.prompt)
+def process_prompt(prompt: InputPrompt):
+    processed_prompt = process_prompt_utils(prompt.prompt)
     return {"generated_text": processed_prompt}
 
 
