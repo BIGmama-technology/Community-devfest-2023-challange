@@ -1,18 +1,16 @@
 from transformers import AutoTokenizer
 import transformers
-import torch
 
 
-class Llama:
-    model_name = "meta-llama/Llama-2-7b-chat-hf"
+class Falcon:
+    model_name = "tiiuae/falcon-7b"
 
-    def __init__(self) -> None:
+    def __init__(self, device="auto") -> None:
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
         self.pipeline = transformers.pipeline(
             "text-generation",
             model=self.model_name,
-            torch_dtype=torch.float16,
-            device_map="auto",
+            device_map=device,
         )
 
     def generate(self, prompt: str) -> str:
@@ -25,3 +23,9 @@ class Llama:
             max_length=200,
         )
         return sequences[0]["generated_text"]
+
+
+if __name__ == "__main__":
+    falcon = Falcon()
+    prompt = "I am a llama. I like to eat grass and"
+    print(falcon.generate(prompt))
