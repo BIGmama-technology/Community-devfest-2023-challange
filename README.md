@@ -35,6 +35,14 @@ The platform is designed with a focus on:
 
 ## Setup Instructions
 
+clone this repo :
+
+```bash
+git clone git@github.com:BIGmama-technology/Community-devfest-2023-challange.git
+```
+
+> checkout api/README.md to run falcon 7B API 
+
 **🚨 Next.js 14 requires node version 18.17 and up so make sure to install it or update your current version. 🚨**
 
 **🚨 This project uses [`pnpm`](https://pnpm.io/) as its package manager so make sure to [install](https://pnpm.io/installation) it. 🚨**
